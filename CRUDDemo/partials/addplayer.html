@@ -1,0 +1,28 @@
+﻿<h3>Add Player</h3>
+{{message}}
+
+<form name="addPlayerForm">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" ng-model="player.Name" required /></td>
+        </tr>
+        <tr>
+            <td>Club</td>
+            <td><input type="text" ng-model="player.Club" required /></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td><input type="text" ng-model="player.Country" required /></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="number" min="15" max="60" ng-model="player.Age" required /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Submit" ng-disabled="addPlayerForm.$invalid" />
+            </td>
+        </tr>
+    </table>
+</form>
